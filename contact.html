@@ -16,79 +16,33 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-image: url('img/back1.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            filter: brightness(80%);
-            /* Adjust the brightness percentage as needed */
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-
-        section {
-            margin: 2em;
-            padding: 2em;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        h2 {
-            margin-bottom: 1em;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5em;
-            font-weight: bold;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 0.5em;
-            margin-bottom: 1em;
             box-sizing: border-box;
-            border: none;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            font-family: 'Poppins', sans-serif;
         }
 
-        input:focus,
-        textarea:focus {
-            background-color: #e0e0e0;
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #1f242d;
         }
 
-        button {
-            background-color: #333;
-            color: white;
-            padding: 0.7em 1em;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        .error {
-            color: red;
+        .contact h2 {
+            font-size: 40px;
+            color: #ededed;
+            text-align: center;
+            margin-bottom: 10px;
         }
     </style>
+
+
+
+
 
 
     <!-- navigation -->
@@ -129,74 +83,38 @@
         </div>
     </nav>
 
-    <section>
-        <h2>Contact Form</h2>
-        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <section class="contact">
+        <h2>Contact Me!</h2>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                </div>
 
-            <button type="submit">Submit</button>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Phone Number" id="name" class="phone" autocomplete="off">
+                    </div>
+
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    </div>
+
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class=""></textarea>
+                </div>
+                <button type="submit">Send Message</button>
         </form>
+
     </section>
-
-    <section>
-        <h2>Registration Form</h2>
-        <form id="registrationForm" action="#" method="post" onsubmit="return validateRegistrationForm()">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
-
-            <button type="submit">Register</button>
-        </form>
-    </section>
-
-    <script>
-        function validateForm() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-
-            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-                alert('Please fill out all fields.');
-                return false;
-            }
-
-            return true;
-        }
-
-        function validateRegistrationForm() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-            var confirmPassword = document.getElementById('confirmPassword').value;
-
-            if (username.trim() === '' || password.trim() === '' || confirmPassword.trim() === '') {
-                alert('Please fill out all fields.');
-                return false;
-            }
-
-            if (password !== confirmPassword) {
-                alert('Passwords do not match.');
-                return false;
-            }
-
-            return true;
-        }
-    </script>
-
-
-
-
 
 
 
