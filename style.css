@@ -459,6 +459,49 @@ padding: 6px 0;
     justify-content: flex-end;
 
 }
-   
+
+<!--ABOUT US-->
+#about {
+    padding: 80px 0;
+    background-color: #f8f9fa; 
+}
+
+#about h2 {
+    color: #343a40; 
+}
+
+#about p, #about .feature-heading {
+    color: #6c757d; 
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature-heading {
+    margin-bottom: 20px;
+}
+
+.feature i {
+    margin-right: 10px;
+}
+
+#about {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+#about h2 {
+    color: #343a40;
+}
+
+#about p, #about .feature-heading {
+    color: #6c757d;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
 
 
