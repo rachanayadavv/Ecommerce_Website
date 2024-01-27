@@ -523,13 +523,8 @@ padding: 6px 0;
 .about .main img{
     max-width: 100%;
     height: auto;
-<<<<<<< HEAD
     margin-right: 20px;
-    
-=======
-    margin-left: 20px;  
->>>>>>> 5bc2a71bab46f61e3217396bfe64834edccc0311
-    
+    margin-left: 20px;    
 
 }
 
@@ -557,7 +552,6 @@ padding: 6px 0;
     margin-top: 20px;
     left: 200px;
     top: 200px;
-}
 }
 
 
