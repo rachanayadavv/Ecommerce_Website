@@ -460,11 +460,11 @@ padding: 6px 0;
 
 }
 
-<<<<<<< HEAD
+
+
 /*..................ABOUT US................*/
-=======
-<!--ABOUT US-->
->>>>>>> 57733c65fcc1a2a4e683333df08508d0e217a14b
+
+
 #about {
     padding: 80px 0;
     background-color: #f8f9fa; 
@@ -507,7 +507,6 @@ padding: 6px 0;
 .feature {
     margin-bottom: 40px;
 }
-<<<<<<< HEAD
 
 /*..................aboutM................*/
 
@@ -538,11 +537,6 @@ padding: 6px 0;
 .about .main .all-text{
     text-align: center;
 }
-   
-=======
->>>>>>> 57733c65fcc1a2a4e683333df08508d0e217a14b
-
-
 
 .about .main .btn1{
     text-align: center;
@@ -553,7 +547,3 @@ padding: 6px 0;
     text-align: center;
     margin-top: 20px;
 }
-
-
-
-
