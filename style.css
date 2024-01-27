@@ -459,12 +459,7 @@ padding: 6px 0;
     justify-content: flex-end;
 
 }
-
-
-
 /*..................ABOUT US................*/
-
-
 #about {
     padding: 80px 0;
     background-color: #f8f9fa; 
@@ -507,7 +502,6 @@ padding: 6px 0;
 .feature {
     margin-bottom: 40px;
 }
-
 /*..................aboutM................*/
 
 .about{
@@ -547,3 +541,7 @@ padding: 6px 0;
     text-align: center;
     margin-top: 20px;
 }
+
+
+
+
