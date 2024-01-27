@@ -513,16 +513,17 @@ padding: 6px 0;
     align-items: center;
 }
 
-.about .main .img{
+.about .main{
     display: flex;
-    justify-content: space-between; /* Adjust this property as needed */
-    align-items: center; /* Adjust this property as needed */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 }
 .about .main img{
-    width: 280px;
-    max-width: 280px;
+    max-width: 100%;
     height: auto;
-    margin-left: 20px;
+    margin-right: 20px;
     
     
 
@@ -532,14 +533,27 @@ padding: 6px 0;
     text-align: center;
 }
 
-.about .main .btn1{
-    text-align: center;
-    margin-top: 20px;
+.about .main .btn-container{
+    display: flex;
+    position: absolute;
+    gap: 20px;
 }
 
-.about .main .btn2{
+.about .main .btn-container .btn1{
+    position: relative;
     text-align: center;
     margin-top: 20px;
+    left: 200px;
+    top: 200px;
+}
+
+.about .main .btn-container .btn2{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    left: 200px;
+    top: 200px;
+}
 }
 
 
