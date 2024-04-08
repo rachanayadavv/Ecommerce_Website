@@ -43,7 +43,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
 
                     <li class="nav-item">
@@ -58,53 +58,56 @@
         </div>
     </nav>
 
-    <!-- Contact Us Section -->
-    <section class="contact-us-section mt-5 pt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2>Contact Us</h2>
-                    <form onsubmit="return validateForm();">
-                        <!-- Add your contact form fields here -->
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
 
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <h2>Our Location</h2>
-                    <!-- Add your address and map here -->
-                    <!-- For example:-->
-                    <p>PCCOE - Pimpri Chinchwad College Of Engineering,<br> near Akurdi Railway Station Road,<br> Sector
-                        No. 26,
-                        Pradhikaran,<br> Nigdi, Pimpri-Chinchwad, Maharashtra</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14984011.540121582!2d74.54625506415334!3d20.937423073655495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7f8b83b5871d9%3A0xa1f579be60f3c2f5!2sIndia!5e0!3m2!1sen!2sus!4v1645543195108!5m2!1sen!2sus"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container">
+        <div class="login-form">
+            <form action="#">
+                <h1>Sign Up</h1>
+                <p>If you are new <a href="signup.html">Login</a>
+                </p>
+                <label for="email">Email </label>
+                <input type="email" placeholder="Enter Email" name="email" />
 
+                <label for="psw">Password </label>
+                <input type="psw" placeholder="Enter Password" name="psw" />
+
+                <label for="psw-repeat">Password </label>
+                <input type="psw-repeat" placeholder="Enter Password" name="psw-repeat" />
+
+                <label>
+                    <input type="checkbox" checked="checked" style="margin-bottom: 15px" />
+                    Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+
+                <div class="buttons">
+                    <button class="cancelbtn">Cancel</button>
+                    <button class="signupbtn">Sign Up</button>
                 </div>
-            </div>
+
+
+
+
+            </form>
         </div>
-    </section>
+    </div>
+
+
+
+
+
+
+
 
 
     <footer class="mt-5 py-5">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="img/logo2.png" alt="">
-                <p class="pt-3">Elevate your style with our curated collection of fashion-forward attire.<br> Discover
-                    the perfect blend of comfort and trend, exclusively at Rymo.<br> Your wardrobe upgrade starts here!
+                <p class="pt-3">Elevate your style with our curated collection of fashion-forward attire.<br>
+                    Discover
+                    the perfect blend of comfort and trend, exclusively at Rymo.<br> Your wardrobe upgrade starts
+                    here!
                 </p>
             </div>
 
@@ -125,7 +128,8 @@
                 <h5 class="pb-2">Contact US</h5>
                 <div>
                     <h6 class="text-uppercase">Address</h6>
-                    <p>PCCOE - Pimpri Chinchwad College Of Engineering,<br> near Akurdi Railway Station Road,<br> Sector
+                    <p>PCCOE - Pimpri Chinchwad College Of Engineering,<br> near Akurdi Railway Station Road,<br>
+                        Sector
                         No. 26,
                         Pradhikaran,<br> Nigdi, Pimpri-Chinchwad, Maharashtra</p>
                 </div>
@@ -170,42 +174,6 @@
         </div>
     </footer>
 
-    <script>
-        function validateForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            // Basic empty field validation
-            if (name == "" || email == "" || message == "") {
-                alert("All fields must be filled out");
-                return false;
-            }
-
-            // Name validation
-            var nameRegex = /^(?=.*[a-zA-Z]).{2,}$/;
-            if (!nameRegex.test(name)) {
-                alert("Name must contain at least two characters and include letters");
-                return false;
-            }
-
-            // Email validation using a regular expression
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(email)) {
-                alert("Please enter a valid email address");
-                return false;
-            }
-
-            // Message validation
-            if (message.includes('.')) {
-                alert("Message cannot contain a full stop (.)");
-                return false;
-            }
-
-            return true;
-        }
-    </script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -215,4 +183,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html> 
+</html>
